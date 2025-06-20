@@ -16,10 +16,18 @@
             color: #9b9292;
             font-size: 15px;
         }
-        .location{
+        .location_content{
+            display: flex;
+            .location{
             color: #e0e0e1;
             font-size: 15px;
+            margin-left: 4px;
         }
+        .location_icon{
+            color: orangered;
+        }
+        }
+        
     }
     .search_container{
         margin-top: 15px;
