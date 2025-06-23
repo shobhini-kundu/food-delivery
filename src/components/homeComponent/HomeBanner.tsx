@@ -3,7 +3,6 @@ import "./HomeBanner.scss"
 const HomeBanner:React.FC = () => {
   return (
     <>
-    
           <div className="banner_container">
       <div className="banner_content_bg">
         <div className="banner_content_c">
