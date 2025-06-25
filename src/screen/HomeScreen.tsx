@@ -6,6 +6,7 @@ import RestaurantCard from '../components/homeComponent/RestaurantCard';
 import { useEffect, useState } from 'react';
 import { getAllRestuarant } from '../services/api';
 import { IRestaurant } from '../interfaces/restuarant';
+import { Link } from 'react-router-dom';
 
 const HomeScreen: React.FC = () => {
   const[allRestuarant,setAllRestuarant]=useState<IRestaurant[]>()
@@ -30,9 +31,10 @@ void getAllRestuarant ().then((response)=>{
           </div>
           <div className="restaurant_section">
             {allRestuarant && allRestuarant.map((restaurant,restaurantIndex)=>{return(
-              <div key={restaurantIndex}>
-              <RestaurantCard 
-              restuarantData ={restaurant}/>
+              <div key={restaurantIndex} >
+                <Link to={`restaurant-menu/${restaurant._id}`}>
+              <RestaurantCard  
+              restuarantData ={restaurant} /></Link>
               </div>
             )}
           ) }

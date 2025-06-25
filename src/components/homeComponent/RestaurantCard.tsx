@@ -10,8 +10,8 @@ const RestaurantCard:React.FC <IRestaurantCardProps> = ({restuarantData}) => {
     <>
     <div className="restaurant_card">
         <div className="image_section" >
-            <img src= '.\public\asset\images\restuarant-card.jpg'/>
-            
+            <img src= {restuarantData.image}/>
+
         </div>
         <div className="content_section">
             <div className="title">{restuarantData.name}
