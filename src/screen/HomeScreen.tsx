@@ -23,6 +23,7 @@ void getAllRestuarant ().then((response)=>{
     <IonContent fullscreen>
       <div className="home_screen">
         <div className="header_section">
+          
           <FilterComponent/>
         </div>
         <div className="body_section">

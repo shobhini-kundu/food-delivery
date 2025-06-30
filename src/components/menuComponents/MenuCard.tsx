@@ -1,15 +1,21 @@
 import React from 'react'
 import "./MenuCard.scss"
-const MenuCard : React.FC = () => {
+import { IMenuItems } from '../../interfaces/restuarant'
+interface IItemCardProps{
+itemData:IMenuItems
+
+}
+
+const MenuCard : React.FC<IItemCardProps> = ({itemData}) => {
   return (
     <div className='menu_card'>
         <div className="image_section">
-            <img src="" alt="" />
+            <img src={itemData.image} alt="" />
         </div>
         <div className="content_section">
-            <div className="title">Lorem, ipsum dolor.</div>
-            <div className="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, ut.</div>
-            <div className="button">Add Item</div>
+            <div className="title"> {itemData.name}</div>
+            <div className="description">{itemData.description}</div>
+              <div className="button">Add Item</div>
         </div>
     </div>
   )
