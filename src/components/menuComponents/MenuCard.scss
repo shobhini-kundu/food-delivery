@@ -1,0 +1,47 @@
+.menu_card{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    border-radius: 5px;
+
+    .image_section{
+        width: 30%;
+        height: 100%;
+        border-radius: 5px;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+
+        }
+        
+
+    }.content_section{
+            width: 70%;
+            height: 100%;
+            padding: 7px 10px;
+            .title{
+                font-size: 16px;
+                font-weight: 700;
+                color: #555;
+            }
+            .description{
+                font-size: 14px;
+                font-weight: 400;
+                margin-top: 5px;
+            }
+            .button{
+            margin-top: 10px;
+            width: max-content;
+            padding: 7px 10px;
+            font-size: 13px;
+            color: #fff;
+            font-weight: 500;
+            background-color:#cd5721 ;
+            border-radius:5px ;
+            }
+        }
+}
